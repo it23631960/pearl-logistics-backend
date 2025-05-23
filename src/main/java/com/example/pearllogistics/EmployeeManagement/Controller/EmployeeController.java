@@ -17,7 +17,12 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@CrossOrigin(origins = "*", allowCredentials = "true",
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "http://localhost:8080",
+    "https://*.railway.app",
+    "https://pearl-logistics-frontend.vercel.app"
+}, allowCredentials = "true",
         allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT,
         RequestMethod.DELETE, RequestMethod.OPTIONS})
 @RequestMapping("/api/employees")

@@ -16,7 +16,10 @@ import org.springframework.web.multipart.MultipartFile;
     "http://localhost:3000",
     "http://localhost:8080",
     "https://*.railway.app",
-    "https://pearl-logistics-frontend.vercel.app"
+    "https://pearl-logistics-frontend.vercel.app",
+    "https://pearl-logistics-user.vercel.app",
+    "https://pearl-logistics-agent.vercel.app",
+    "https://pearl-logistics-admin.vercel.app"
 }, allowCredentials = "true",
         allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT,
         RequestMethod.DELETE, RequestMethod.OPTIONS})
@@ -47,7 +50,10 @@ public class AdminController {
         "http://localhost:3000",
         "http://localhost:8080",
         "https://*.railway.app",
-        "https://pearl-logistics-frontend.vercel.app"
+        "https://pearl-logistics-frontend.vercel.app",
+        "https://pearl-logistics-user.vercel.app",
+        "https://pearl-logistics-agent.vercel.app",
+        "https://pearl-logistics-admin.vercel.app"
     })
     public ResponseEntity<AdminAuthResponse> login(@RequestBody AdminAuthRequestLogin request) {
         AdminAuthResponse response = adminService.loginAdmin(request);

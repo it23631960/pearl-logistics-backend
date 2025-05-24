@@ -59,7 +59,10 @@ public class SecurityConfig {
             "http://localhost:3000",
             "http://localhost:8080",
             "https://*.railway.app",
-            "https://pearl-logistics-frontend.vercel.app"
+            "https://pearl-logistics-frontend.vercel.app",
+            "https://pearl-logistics-user.vercel.app",
+            "https://pearl-logistics-agent.vercel.app",
+            "https://pearl-logistics-admin.vercel.app"
         ));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
